@@ -1,0 +1,39 @@
+@use '../utils/mixins';
+@use '../vars/colors';
+
+.categories {
+  .categories__articles {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    row-gap: 56px;
+
+    .categories__article {
+      .article__images {
+        display: flex;
+        flex-direction: row;
+        column-gap: 24px;
+      }
+
+      .article__link {
+        @include mixins.manrope-font(700, 24px, 140%, 0);
+
+        margin-top: 16px;
+      }
+    }
+  }
+
+  .primary-button {
+    color: colors.$white-color;
+    background: colors.$primary-button-bg-color;
+    border: 1px colors.$primary-button-bg-color solid;
+    border-radius: 8px;
+    width: 324px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 56px;
+
+    @include mixins.manrope-font(700, 16px, 27px, 0);
+  }
+}

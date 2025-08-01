@@ -1,0 +1,8 @@
+@use '../utils/mixins';
+@use '../vars/colors';
+
+.about-us {
+  background: url(../images/about-us.png) top / 100% 100%;
+  height: 100vh;
+  margin: 0 auto;
+}

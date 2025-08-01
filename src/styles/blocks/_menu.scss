@@ -1,7 +1,9 @@
+@use '../vars/colors';
+
 .menu {
   box-sizing: border-box;
   height: 100vh;
-  background-color: var(--bg-color);
+  background-color: colors.$bg-color;
   pointer-events: none;
   font-weight: 700;
 }
@@ -12,7 +14,7 @@
 }
 
 .menu__phone-number {
-  color: var(--primary-color);
+  color: colors.$primary-color;
   text-decoration: none;
   display: block;
   font-size: 16px;
@@ -22,7 +24,7 @@
 }
 
 .menu__call-to-order {
-  color: var(--primary-color);
+  color: colors.$primary-color;
   text-decoration: none;
   display: block;
   font-size: 16px;
@@ -31,7 +33,7 @@
   height: 26px;
   margin-top: 16px;
   margin-bottom: 4px;
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 1px solid colors.$primary-color;
   text-transform: uppercase;
   width: fit-content;
 }

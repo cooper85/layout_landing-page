@@ -1,0 +1,46 @@
+@use '../utils/mixins';
+@use '../vars/colors';
+@use '../vars/breakpoints';
+
+.header {
+  box-sizing: border-box;
+}
+
+.header__container {
+  background: url(../images/header-bg.png) top / 100% 100%;
+  height: 100vh;
+  margin: 0 auto;
+
+  @include mixins.on-desktop {
+    width: breakpoints.$breakpoint-l;
+  };
+}
+
+.header__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  color: colors.$white-color;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+.header__bottom {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  flex-flow: column-reverse;
+  color: colors.$primary-color;
+
+  @include mixins.on-tablet {
+    left: 72px;
+    bottom: 64px;
+  }
+
+  @include mixins.on-desktop {
+    left: 120px;
+    bottom: 64px;
+  }
+}
+

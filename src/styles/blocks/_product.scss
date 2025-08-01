@@ -1,0 +1,35 @@
+@use '../utils/mixins';
+
+.product {
+  &__image {
+    width: 324px;
+    height: 324px;
+  }
+
+  &__title {
+    margin: 24px 0 8px;
+
+    @include mixins.manrope-font(700, 18px, 140%, 0);
+  }
+
+  &__description {
+    margin-top: 8px;
+
+    @include mixins.manrope-font(400, 16px, 140%, 0.15px);
+  }
+
+  &__price {
+    margin-top: 12px;
+
+    @include mixins.manrope-font(700, 16px, 140%, 0);
+
+    @include mixins.on-tablet {
+      margin-top: 34px;
+    };
+
+    @include mixins.on-desktop {
+      margin-top: 12px;
+    };
+  }
+}
+

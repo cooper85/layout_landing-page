@@ -1,3 +1,19 @@
+# parcel daemon
+npm i -D parcel
+
+# parcel watch
+File | Settings -> Tools | File Watchers -> ...
+npx parcel src/index.html
+
+# parcel vs npm run buid
+Для разработки и быстрой проверки изменений всегда используй npx parcel src/index.html.
+Для финальной сборки — npm run build.
+Почему, как думаешь, hot reload удобнее для верстки?
+
+# stylelint
+IDE settings: run stylelint --fix on save (save up 15% of dev time)
+npx stylelint ./src/styles/style.css --fix (save for issue of empty lines before media, etc as well)
+
 # Landing Page
 
 > ❗❗ You will complete this task in the **Landing** topic.
